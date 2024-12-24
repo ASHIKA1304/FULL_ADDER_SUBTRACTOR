@@ -42,7 +42,7 @@ FULL ADDER
 
 ![WhatsApp Image 2024-12-09 at 18 44 09_b5340c89](https://github.com/user-attachments/assets/a430a082-9c71-42b1-89c4-56ae319b0f32)
 
-FULL SUBRACTOR
+FULL SUBTRACTOR
 
 ![WhatsApp Image 2024-12-09 at 18 44 41_6317631e](https://github.com/user-attachments/assets/708d892f-5039-4ec3-8d72-dde8f882fbb0)
 
@@ -50,17 +50,16 @@ FULL SUBRACTOR
 
 **Procedure**
 
-1. Type the program in Quartus software.
-2. Compile and run the program.
-3. Generate the RTL schematic and save the logic diagram.
+1. Type the program in Quartus software. 
+2. Compile and run the program. 
+3. Generate the RTL schematic and save the logic diagram. 
 4. Create nodes for inputs and outputs to generate the timing diagram.
 5. For different input combinations generate the timing diagram.
 
 
 **Program:**
 
- Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
-Developed by:ASHIKA TR RegisterNumber:24900481
+Full Adder
 
 ```
 module ha(a,b,sum,carry);
@@ -71,6 +70,7 @@ assign carry= ( a & b);
 endmodule
 ```
 
+Full Subtractor
 ```
 module hs(a,b,difference,borrow);
 input a,b;
@@ -80,13 +80,16 @@ assign borrow= ( ~a & b);
 endmodule
 ```
 
+Developed by:ASHIKA TR RegisterNumber:24900481
+
 **RTL Schematic**
 
 FULL ADDER
 ![WhatsApp Image 2024-12-09 at 19 09 43_2d6dc2f3](https://github.com/user-attachments/assets/2a4bd80d-b011-42d1-9f67-6e6d3b661977)
 
-FULL SUBRACTOR
-![WhatsApp Image 2024-12-09 at 19 13 18_0bd74ead](https://github.com/user-attachments/assets/81ef6688-eed6-46ee-ab68-3ae9ee0efd6e)
+FULL SUBTRACTOR
+![WhatsApp Image 2024-12-24 at 12 51 16_8f322320](https://github.com/user-attachments/assets/fa37313c-7b21-4da1-b393-201cee5ca4f9)
+
 
 
 
@@ -98,8 +101,12 @@ FULL SUBRACTOR
 FULL ADDER
 ![WhatsApp Image 2024-12-09 at 19 09 56_95d6a187](https://github.com/user-attachments/assets/ed3dc5c0-14e3-45ab-a4b9-8b87565de6ae)
 
-FULL SUBRACTOR
-![WhatsApp Image 2024-12-09 at 19 09 57_b6486187](https://github.com/user-attachments/assets/5edb3507-e2a6-460e-a4f0-b2581309c37d)
+FULL SUBTRACTOR
+
+![WhatsApp Image 2024-12-24 at 12 55 55_dbe40438](https://github.com/user-attachments/assets/36b80a5d-731b-43a9-806a-ef240d154154)
+
+
+
 
 
 
