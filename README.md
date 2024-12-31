@@ -62,21 +62,22 @@ FULL SUBTRACTOR
 Full Adder
 
 ```
-module ha(a,b,sum,carry);
-input a,b;
+module fa(a,b,cin,sum,carry);
+input a,b,cin;
 output sum,carry;
-assign sum= (a ^ b);
-assign carry= ( a & b);
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
 endmodule
+
 ```
 
 Full Subtractor
 ```
-module hs(a,b,difference,borrow);
-input a,b;
+module fs(a,b,bin,difference,borrow);
+input a,b,bin;
 output difference,borrow;
-assign difference= (a ^ b);
-assign borrow= ( ~a & b);
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
 endmodule
 ```
 
